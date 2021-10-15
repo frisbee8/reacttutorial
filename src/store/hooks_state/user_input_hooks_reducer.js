@@ -8,7 +8,7 @@ export const initialState = {
 export const UserReducer = (state = initialState, action) => {
     switch(action.type) {
       case ACTION_TYPES.USER_INPUT_CHANGE:
-        return {
+      return {
           ...state,
           user_text_change: action.payload
         }
